@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title> WDD 131 - Dynamic Web Fundamentals - Okuku Ogorchukwu Lourentta</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Okuku Ogorchukwu Lourentta">
+    <meta name="keywords" content="WDD 131, Dynamic Web Fundamentals, Okuku Ogorchukwu Lourentta">
+    <meta name="author" content="Okuku Ogorchukwu Lourentta">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Okuku Lourentta</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+                <a href="https://www.linkedin.com/in/ogorchukwu-lourentta-okuku-810941268/">LinkedIn</a>
+                <a href="https://byupw.instructure.com/">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/8?lang=eng">Scripture</a>
+                <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card first">
+            <h2>About Me</h2>
+            <img src="images/me.webp" alt="Lourentta">
+            <p>My name is Okuku Ogorchukwu loiurentta, I am a developer from Delta State Nigeria, and a lover of Christ Jesus. I design scalable web applications, with a unique blend of colours.</p>
+            <div class="design">
+                <h3>Delta State, Nigeria</h3>
+                <div class="underline"></div>
+            </div>
+            <p>Delta State is a state in southern Nigeria, known for its rich culture, diverse ethnic groups, and vibrant traditions. It is home to beautiful landscapes, oil-rich resources, and a thriving cultural heritage.</p>
+        </section>
+        <section class="card">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Django</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> Okuku Ogorchukwu Lourentta Delta State</p>
+        <p id="lastModified"></p>
+    </footer>
+    
 </body>
 </html>
