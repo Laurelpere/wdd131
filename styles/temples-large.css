@@ -1,0 +1,32 @@
+@media screen and (min-width: 40em) {
+*{
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 1600px;
+}
+    nav ul{
+        position: relative;
+        bottom: -10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        place-items: center;
+    }
+    h1 {
+		font-size: 2rem;
+	}
+	
+	#menu {
+		display: none;
+	}
+}
