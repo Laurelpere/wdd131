@@ -21,9 +21,17 @@ body {
 }
 
 header {
-    background-color: var(--color-background);
+    margin-top: 0;
+    padding: 1rem;
+    background-color: var(--color-primary);
     font-size: var(--font-size-large);
 
+}
+
+header h1 {
+    color: var(--color-background);
+    font-size: var(--font-size-base);
+    text-align: left;
 }
 
 nav {
@@ -33,18 +41,17 @@ nav {
 }
 
 #menu {
-	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
 	font-size: 2rem;
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
-	background-color: var(--color-secondary);
 	color: var(--color-text);
 }
 
 #menu::before {
-    display: flex;
-    justify-content: right;
 	content: "☰";
 }
 
@@ -82,6 +89,7 @@ nav a:hover {
 main { 
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .temples{
