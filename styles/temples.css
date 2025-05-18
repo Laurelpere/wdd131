@@ -48,7 +48,7 @@ nav {
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
-	color: var(--color-text);
+	color: var(--color-background);
 }
 
 #menu::before {
