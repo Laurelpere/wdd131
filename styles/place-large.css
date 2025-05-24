@@ -1,0 +1,120 @@
+@media (min-width: 40em) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Montserrat, sans-serif;
+        color: var(--color-text);
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin: 0 auto;
+    }
+
+    .second-head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    picture source {
+        padding: 0;
+        margin: 0;
+    }
+
+    picture source {
+        width: 100%;
+        margin: 0;
+        position: relative;
+
+    }
+    .info {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+
+    .weather-info {
+        position: absolute;
+        top: 70%;
+        right: 5%;
+    }
+    .data {
+        text-align: center;
+        background-color: var(--color-background);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .data h2 {
+        background-color: #4CAF50;
+        color: white;
+        padding: 0.5rem;
+        position: relative;
+        top: 0.5rem;
+        left: -20px;
+        margin-bottom: 2rem;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        position: relative;
+        bottom: -10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        place-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+    .data {
+        background-color: white;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-icon-lrg{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+    }
+      .weather-heading::before {
+        content: "";
+        margin-left: 0.5em;
+        background: url('images/large-icon.svg') no-repeat center/contain;
+        
+    }
+    .color{
+        width: 100%;
+        height: 20px;
+        padding: 0;
+        margin: 0;
+        background-color: #4CAF50;
+    }
+}
