@@ -1,0 +1,113 @@
+:root{
+    --color-primary: #3498db;
+    --color-secondary: #2ecc71;
+    --color-accent: #e74c3c;
+    --color-background: #ecf0f1;
+    --color-text: #2c3e50;
+    --font-family: 'Montserrat, sans-serif';
+    --font-size-base: 16px;
+    --font-size-large: 24px;
+    --font-size-small: 12px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 0;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    font-size: var(--font-size-large);
+
+}
+
+header h1 {
+    color: var(--color-background);
+    font-size: var(--font-size-base);
+    text-align: left;
+}
+
+nav {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    font-size: var(--font-size-base);
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	color: var(--color-background);
+}
+
+#menu::before {
+	content: "☰";
+}
+
+.navigation{
+    display: none;
+}
+
+
+.navigation.show {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+nav li{
+    list-style: none;
+	display: block;
+}
+
+nav  a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+nav a:hover {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main { 
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.temples{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(267px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+figure img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    text-align: center;
+    padding: 1rem;
+    font-size: var(--font-size-base);
+}

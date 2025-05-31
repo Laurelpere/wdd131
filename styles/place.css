@@ -18,15 +18,16 @@ body{
     color: var(--color-text);
 }
 
-
 svg .cls-1 { 
         fill: #f8b62d; 
         stroke: #231815; 
         stroke-miterlimit: 10; 
     }
+
 svg .cls-2, .cls-4 { 
     fill: #231815; 
 }
+
 svg .cls-3 { 
     fill: #fff; 
 }
@@ -93,8 +94,8 @@ h2 {
 }
 
 footer{
-    background-color: var(--color-secondary);
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-background);
     padding: 1rem;
     text-align: center;
 }
