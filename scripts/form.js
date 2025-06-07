@@ -43,6 +43,23 @@ const products = [
   }
 ];
 
+// ...existing code...
+
+// Populate Product Name select options from products array
+const productSelect = document.getElementById('productName');
+if (productSelect) {
+    // Remove existing options except the first placeholder
+    productSelect.innerHTML = '<option value="" selected disabled>Select a Product</option>';
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.id;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+}
+
+
+
 if (window.location.pathname.endsWith('review.html')) {
     let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;
     reviewCount += 1;
