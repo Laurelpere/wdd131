@@ -1,9 +1,7 @@
 :root{
-    --primary-color: #4a90e2;
     --secondary-color: #568203;
-    --background-color: #02153f;
-    --text-color: #ffffff;
-    --accent-color: #030303;
+    --primary-color: #02153f;
+    --background-color: #ffffff;
     --header-font: 'Montserrat, sans-serif';
     --body-font: 'Open Sans, sans-serif';
 
@@ -22,13 +20,17 @@ a {
 
 body {
     font-family: var(--body-font);
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
 }
 
 header {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--background-color);
     padding: 20px;
     text-align: center;
     font-family: var(--header-font);
