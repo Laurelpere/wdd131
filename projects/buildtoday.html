@@ -36,14 +36,39 @@
                 <img src="images/small-img.webp" alt="nigeria" width="512" height="341" loading="lazy">
             </picture>
 
-            <div class="end">
+            <section class="end">
                 <svg class="second" xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#1f1f1f"><path d="M760-400v-260L560-800 360-660v60h-80v-100l280-200 280 200v300h-80ZM560-800Zm20 160h40v-40h-40v40Zm-80 0h40v-40h-40v40Zm80 80h40v-40h-40v40Zm-80 0h40v-40h-40v40ZM280-220l278 76 238-74q-5-9-14.5-15.5T760-240H558q-27 0-43-2t-33-8l-93-31 22-78 81 27q17 5 40 8t68 4q0-11-6.5-21T578-354l-234-86h-64v220ZM40-80v-440h304q7 0 14 1.5t13 3.5l235 87q33 12 53.5 42t20.5 66h80q50 0 85 33t35 87v40L560-60l-280-78v58H40Zm80-80h80v-280h-80v280Z"/></svg>
                 <h2>Build Today, Live Tomorrow</h2>
                 <p>BuildToday Real Estate is a premier real estate company dedicated to helping you find your dream home. With a wide range of properties available, we are committed to providing exceptional service and expertise in the real estate market.</p>
                 <p>Whether you're looking to buy, sell, or rent, our team of experienced professionals is here to guide you every step of the way. We understand that finding the perfect property is a significant decision, and we are here to make the process as smooth and enjoyable as possible.</p>
                 <p>At BuildToday Real Estate, we pride ourselves on our extensive knowledge of the local market and our commitment to customer satisfaction. We believe that every client deserves personalized attention and a tailored approach to their real estate needs.</p>
-            </div>
+            </section>
         </div>
+
+        <section>
+            <h2>Send us a message</h2>
+            <form action="review.html" method="get">
+                <fieldset>
+                    <label for="Name">Name:</label><br>
+                    <input type="text" id="Name" name="Name" required><br>
+                    <label for="Email">Email:</label><br>
+                    <input type="email" id="Email" name="Email" required><br>
+                </fieldset>
+                <fieldset>
+                    <label for="housing">Property</label>
+                    <select name="housing" id="housing">
+                        <option value="" selected disabled>Select a Property</option>
+                        <option value="item1">Item1</option>
+                        <option value="item2">Item2</option>
+                        <option value="item3">Item3</option>
+                        <option value="item4">Item4</option>
+                    </select>
+                    <label for="Message">Message:</label><br>
+                    <textarea id="Message" name="Message" rows="4" required></textarea><br>
+                </fieldset>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
 
     </main>
  
