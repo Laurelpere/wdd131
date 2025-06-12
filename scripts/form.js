@@ -60,14 +60,32 @@ if (productSelect) {
 
 
 
-if (window.location.pathname.endsWith('review.html')) {
-    let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;
-    reviewCount += 1;
-    localStorage.setItem('reviewCount', reviewCount);
 
-    // Optionally, display the count on the page
-    const reviewCounterElement = document.getElementById('reviewCounter');
-    if (reviewCounterElement) {
-        reviewCounterElement.textContent = `You have submitted ${reviewCount} review(s).`;
-    }
+
+const reviewForm = document.querySelector('form');
+if (reviewForm) {
+    reviewForm.addEventListener('submit', function(e) {
+        // Get form values
+        const product = document.getElementById('productName').value;
+        const stars = document.querySelector('input[name="stars"]:checked')?.value || '';
+        const features = Array.from(document.querySelectorAll('input[name="feature"]:checked')).map(cb => cb.value);
+
+        // Save to localStorage
+        localStorage.setItem('reviewProduct', product);
+        localStorage.setItem('reviewStars', stars);
+        localStorage.setItem('reviewFeatures', JSON.stringify(features));
+        // Allow form to submit normally (GET to review.html)
+    });
+}
+
+if (window.location.pathname.endsWith('review.html')) {
+    // Get data from localStorage
+    const product = localStorage.getItem('reviewProduct');
+    const stars = localStorage.getItem('reviewStars');
+    const features = JSON.parse(localStorage.getItem('reviewFeatures') || '[]');
+
+    // Display in your HTML (add these elements in review.html)
+    document.getElementById('displayProduct').textContent = product || '';
+    document.getElementById('displayStars').textContent = stars || '';
+    document.getElementById('displayFeatures').textContent = features.join(', ');
 }

@@ -2,8 +2,7 @@
     --secondary-color: #568203;
     --primary-color: #02153f;
     --background-color: #ffffff;
-    --header-font: 'Montserrat, sans-serif';
-    --body-font: 'Open Sans, sans-serif';
+    --body-font: 'Montserrat, sans-serif';
 
 }
 
@@ -34,4 +33,118 @@ header {
     padding: 20px;
     text-align: center;
     font-family: var(--header-font);
+}
+header svg {
+    fill: white;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.second {
+    fill: var(--primary-color);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+}
+
+.material-symbols-outlined {
+  fill: var(--background-color);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+nav li{
+    list-style: none;
+	display: block;
+    text-align: right;
+    padding: 1rem;
+}
+
+nav  a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	color: var(--color-background);
+}
+
+#menu::before {
+	content: "☰";
+}
+
+.navigation{
+    display: none;
+}
+
+
+.navigation.show {
+	display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+nav li{
+    list-style: none;
+	display: block;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+.end {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
 }
