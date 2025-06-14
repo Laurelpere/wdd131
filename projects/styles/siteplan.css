@@ -35,14 +35,12 @@ header {
     font-family: var(--header-font);
 }
 header svg {
-    fill: white;
     display: flex;
     justify-content: left;
     align-items: flex-start;
 }
 
 .second {
-    fill: var(--primary-color);
     display: flex;
     justify-self: center;
     align-self: center;
@@ -50,7 +48,6 @@ header svg {
 }
 
 .material-symbols-outlined {
-  fill: var(--background-color);
   font-variation-settings:
   'FILL' 0,
   'wght' 400,

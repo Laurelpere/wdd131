@@ -96,3 +96,50 @@ if (reviewForm) {
         localStorage.setItem('reviewEmail', document.querySelector('#email').value);
     });
 }
+
+// Add this to your JS file or in a <script> tag
+
+function showWelcomePopup() {
+    // Create popup container
+    const popup = document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = '0';
+    popup.style.left = '0';
+    popup.style.width = '100vw';
+    popup.style.height = '100vh';
+    popup.style.background = 'rgba(0,0,0,0.5)';
+    popup.style.display = 'flex';
+    popup.style.alignItems = 'center';
+    popup.style.justifyContent = 'center';
+    popup.style.zIndex = '9999';
+
+    // Create popup content
+    const content = document.createElement('div');
+    content.style.background = '#fff';
+    content.style.padding = '2rem';
+    content.style.borderRadius = '8px';
+    content.style.textAlign = 'center';
+    content.innerHTML = `
+        <h2>Welcome!</h2>
+        <p>We're glad you're here.</p>
+        <button id="closeWelcomeBtn">Close</button>
+    `;
+
+    content.querySelector("#closeWelcomeBtn").style.backgroundColor = "#4CAF50";
+    content.querySelector("#closeWelcomeBtn").style.color = "white";
+    content.querySelector("#closeWelcomeBtn").style.width = "100px";
+    content.querySelector("#closeWelcomeBtn").style.height = "40px";
+    content.querySelector("#closeWelcomeBtn").style.padding = "10px 20px";
+    content.querySelector("#closeWelcomeBtn").style.margin = "10px";
+
+    popup.appendChild(content);
+    document.body.appendChild(popup);
+
+    // Close button event
+    document.getElementById('closeWelcomeBtn').onclick = function() {
+        document.body.removeChild(popup);
+    };
+}
+
+// Show popup when page loads
+window.addEventListener('DOMContentLoaded', showWelcomePopup);
